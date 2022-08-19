@@ -2,6 +2,7 @@ const express = require('express');
 const { sequelize, Users, Products, Orders, Categories, OrderProducts } = require('./models');
 const cors = require('cors');
 const port = 8100;
+const path = require('path');
 const users = require('./routes/userRoutes');
 const products = require('./routes/productRoutes');
 const orders = require('./routes/orderRoutes');
