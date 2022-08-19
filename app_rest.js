@@ -6,6 +6,7 @@ const users = require('./routes/userRoutes');
 const products = require('./routes/productRoutes');
 const orders = require('./routes/orderRoutes');
 const categories = require('./routes/categoryRoutes');
+const history = require('connect-history-api-fallback');
 require('dotenv').config();
 
 const app = express();
@@ -24,6 +25,10 @@ app.use('/admin', products);
 app.use('/admin', orders);
 app.use('/admin', categories);
 
+const staticMdl = express.static(path.join(__dirname, 'dist'));
+app.use(staticMdl);
+app.use(history({ index: '/index.html' }));
+app.use(staticMdl);
 
 app.listen({ port: process.env.PORT || port  }, async () => {
     await sequelize.authenticate();
