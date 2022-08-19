@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "root",  
+    "password": "projectdb",
+    "database": "projekatDB",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": "projectdb",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "dmzrvjhkxmzihv",
+    "password": "210f95b6f248830d64ad7e10ea2ba765366bddb280795c9be474a4861582688d",
+    "database": "d7kirn3nat934b",
+    "host": "ec2-54-77-40-202.eu-west-1.compute.amazonaws.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false,
+    "ssl": true,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
