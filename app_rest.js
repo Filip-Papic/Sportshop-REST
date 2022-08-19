@@ -25,7 +25,7 @@ app.use('/admin', orders);
 app.use('/admin', categories);
 
 
-app.listen({ port: port }, async () => {
+app.listen({ port: process.env.PORT || port  }, async () => {
     await sequelize.authenticate();
     console.log(`Connection to REST API has been established successfully on port ${port}.`);
 });
