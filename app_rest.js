@@ -9,7 +9,6 @@ const categories = require('./routes/categoryRoutes');
 require('dotenv').config();
 const history = require('connect-history-api-fallback');
 
-
 const app = express();
 
 var corsOptions = {

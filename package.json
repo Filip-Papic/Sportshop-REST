@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon app_rest.js"
+    "start": "node app_rest.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",

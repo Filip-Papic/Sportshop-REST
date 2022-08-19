@@ -23,7 +23,7 @@ const io = new Server(server, {
     allowEI03: true
 });
 
-/* var corsOptions = {//ovo treba samo dok ne popravim socket io valjda
+/* var corsOptions = {
     origin: 'http://127.0.0.1:8080',
     optionsSuccessStatus: 200,
     credentials: true // !!!!!!!!!!!!!
