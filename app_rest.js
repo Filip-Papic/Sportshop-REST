@@ -21,10 +21,10 @@ var corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 
-app.use('/admin', users);
+/* app.use('/admin', users);
 app.use('/admin', products);
 app.use('/admin', orders);
-app.use('/admin', categories);
+app.use('/admin', categories); */
 
 const staticMdl = express.static(path.join(__dirname, 'dist'));
 
