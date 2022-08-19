@@ -110,13 +110,13 @@ app.get('/', authToken, (req, res) => {
 //app.set('port', process.env.PORT || 8000);//!!!!!
 
 
-const staticMdl = express.static(path.join(__dirname, 'dist'));
+/* const staticMdl = express.static(path.join(__dirname, 'dist'));
 
 app.use(staticMdl);
 
 app.use(history({ index: '/index.html' }));
 
-app.use(staticMdl);
+app.use(staticMdl); */
 
 
 server.listen({ port: process.env.PORT || port }, async () => {
